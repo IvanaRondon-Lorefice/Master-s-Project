@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+#SBATCH --job-name=3_in-out
+#SBATCH -N 1
+#SBATCH -c 2
+#SBATCH --mem=3G
+#SBATCH -o %A_%a.out    # stdout
+#SBATCH -e %A_%a.err    # stderr
+
+module load conda
+conda activate /NetScratch/REGARN/GRN/conda_GRN
+
+python Improving_Results_3_in_degree.py
