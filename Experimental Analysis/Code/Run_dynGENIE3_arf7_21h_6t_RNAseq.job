@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+#SBATCH --job-name=dynGENIE3_arf7_21h_6t_RNAseq
+#SBATCH -N 1         # One node
+#SBATCH -c 1         # 1 cores
+#SBATCH --mem=3G     # 3G RAM
+#SBATCH -o %A_%a.out    # stdout
+#SBATCH -e %A_%a.err    # stderr
+#SBATCH --array=0-99%30
+
+NUMBER_GENES=157
+STEP=10
+INSTANCES=$((STEP*100))  # Changes depend on the range of array
+
+module load conda
+
+EXP_ID=arf7_21h_6t_RNAseq
+FIRST=$((SLURM_ARRAY_TASK_ID * STEP + 1))
+END=$((FIRST + STEP - 1))
+
+conda activate /NetScratch/REGARN/GRN/conda_GRN
+cd /Bioinfo/REGARN/yrondon/Project_IPS2_New_Folder/Analysis_Experimental_Data/
+python Analysis_dynGENIE3.py $FIRST $END $EXP_ID $NUMBER_GENES $INSTANCES
