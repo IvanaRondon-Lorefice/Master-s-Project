@@ -1,3 +1,32 @@
-# Master-s-Project
+# Gene Regulatory Network Inference
 
-Computational approaches to infer gene regulatory networks have been widely used to determine interactions between genes involved in various biological processes. However, little has been done based on such methods to identify non-coding genes participating in regulatory networks, in particular in the context of developmental processes. Here we study two regression-based learning algorithms applicable to time-series data, called "SWING" and "dynGENIE3", to predict interactions between coding and non-coding genes that control regulatory processes during lateral root formation in Arabidosis thaliana. We first created an in silico benchmarking protocole to test and compare the ability of these two algorithms to infer interactions by applying them to given networks. Then, we were able to improve the predictions (specified by a ranked list of interactions) of both algorithms when using in silico time-series data by comparing to predictions obtained after breaking the causality of the interactions in those data. Lastly, we computed the highest 10 ranked interactions inside the lists obtained by SWING and dynGENIE3 in the experimental dataset of the lateral root formation of Arabidopsis. For some time-series datasets our methods predicted the presence of non-coding genes regulating transcription factors that are known to be crucial in Arabidopsis lateral root development.
+Computational biology project focused on the inference and evaluation of **gene regulatory networks (GRNs)** from time-series biological data.
+
+Developed as part of my Master's research at the **Institute of Plant Sciences Paris-Saclay**, this project compares different network-inference approaches and evaluates their ability to recover regulatory interactions from biological data.
+
+## Project Overview
+
+Gene regulatory network inference aims to identify interactions between genes and reconstruct the regulatory mechanisms underlying biological processes.
+
+In this project, I evaluated and compared two algorithms:
+
+* **SWING**
+* **dynGENIE3**
+
+An *in silico* benchmarking strategy was used to quantitatively assess model performance and compare predicted regulatory interactions.
+
+## Main Tasks
+
+* Gene regulatory network inference
+* Time-series biological data analysis
+* Algorithm benchmarking and comparison
+* Quantitative evaluation of predicted interactions
+* Ranking of regulatory relationships
+* Identification of candidate non-coding RNAs
+* Data analysis and visualization in Python
+
+## Background
+
+This project was developed during my Master's degree in **Systems and Synthetic Biology** at Université Paris-Saclay.
+
+The work contributed to my training in computational biology, algorithm evaluation, and quantitative analysis of biological systems.
