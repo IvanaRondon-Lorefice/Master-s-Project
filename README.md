@@ -1,8 +1,8 @@
 # Gene Regulatory Network Inference
 
-Computational biology project focused on the inference and evaluation of **gene regulatory networks (GRNs)** from time-series biological data.
+Computational biology project focused on the inference and evaluation of gene regulatory networks (GRNs) from time-series biological data.
 
-Developed as part of my Master's research at the **Institute of Plant Sciences Paris-Saclay**, this project compares different network-inference approaches and evaluates their ability to recover regulatory interactions from biological data.
+Developed as part of my Master's research at the Institute of Plant Sciences Paris-Saclay, this project compares different network-inference approaches and evaluates their ability to recover regulatory interactions from biological data.
 
 ## Project Overview
 
@@ -27,6 +27,6 @@ An *in silico* benchmarking strategy was used to quantitatively assess model per
 
 ## Background
 
-This project was developed during my Master's degree in **Systems and Synthetic Biology** at Université Paris-Saclay.
+This project was developed during my Master's degree in Systems and Synthetic Biology at Université Paris-Saclay.
 
 The work contributed to my training in computational biology, algorithm evaluation, and quantitative analysis of biological systems.
